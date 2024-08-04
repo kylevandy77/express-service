@@ -1,0 +1,30 @@
+{
+  "name": "express-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:infra": "npm run build --prefix infrastructure",
+    "build:service": "npm run build --prefix service",
+    "build": "npm run build:infra && npm run build:service",
+    "start:service": "npm run start --prefix service",
+    "dev:service": "npm run dev --prefix service",
+    "deploy": "npm run cdk deploy --prefix infrastructure",
+    "lint": "eslint .",
+    "prettier": "prettier --write .",
+    "install:all": "npm install && npm run install:infra && npm run install:service",
+    "install:infra": "npm install --prefix infrastructure",
+    "install:service": "npm install --prefix service"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^27.0.0",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.0",
+    "typescript": "^4.5.0"
+  },
+  "dependencies": {
+    "express-service": "file:"
+  }
+}
