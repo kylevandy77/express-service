@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true, // Ensure no implicit 'any' types
+        "strictNullChecks": true, // Enable strict null checks
+        "strictFunctionTypes": true, // Enable strict checking of function types
+        "strictBindCallApply": true, // Enable strict bind, call, and apply methods
+        "strictPropertyInitialization": true, // Enable strict property initialization
+        "noImplicitThis": true, // Ensure no implicit 'this' types
+        "alwaysStrict": true // Parse in strict mode and emit "use strict"
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
